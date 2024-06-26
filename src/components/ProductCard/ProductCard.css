@@ -7,17 +7,22 @@
 
 .product-card {
     width: 40vw;
-    height: 20vh;
-    border: 2px solid black;
+    min-height: fit-content;
+    height: 35vh;
+    background-color: rgba(0, 0, 0, 0.055);
     border-radius: 5px;
-    margin: 1%;
+    margin-left: 1%;
+    margin-top: 5%;
     display: flex;
 }
 
 .left {
     width: 30%;
     height: 100%;
-}
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}   
 
 .productName {
     font-size: 1.1rem;
@@ -82,7 +87,29 @@
 .productImg {
     max-height:80%;
     max-width:80%;
-    object-fit: cover;
     border-radius: 5px;
     object-fit: contain;
+}
+
+.productRatings {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 0.8rem;
+}
+
+.productFrom {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 0.8rem;
+}
+
+.productCategory {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 0.8rem;
+    border: 1px solid black;
+    width: fit-content;
+    padding: 1%;
+    font-weight: 500;
+    border-radius: 6px;
 }
