@@ -6,7 +6,7 @@ import CartContext from './context/CartContext';
 import Cart from './components/Cart/Cart';
 import { Provider, useSelector, useDispatch } from 'react-redux';
 import store from './store/CartStore';
-
+import NavBar from './components/NavBar/NavBar';
 function App() {
   // state variable
   // inc
@@ -19,8 +19,9 @@ function App() {
     // <CartContext.Provider value={{ cart, increaseQuantity, decreaseQuantity}}>
       <Provider store={store}>
       <div className="App">
-        <Products />
+        {/* <NavBar /> */}
         <Cart />
+        <Products />
       </div>
       </Provider>
   );

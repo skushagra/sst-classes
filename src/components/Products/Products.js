@@ -1,7 +1,9 @@
+import './Products.css';
 import ProductCard from "../ProductCard/ProductCard";
 import Effect from "../Effect/Effect";
 import { useState, useEffect } from "react";
 import useWindowSize from "../../hooks/useWindowSize";
+
 
 function Products({}) {
   let [products, setProducts] = useState([]);
@@ -18,7 +20,7 @@ function Products({}) {
     })
   }, [])
     return (
-      <div>
+      <div className="productsDisplay">
             {
                 products.map(function (item, index) {
                   return (<ProductCard key={index}  product={item}/>)

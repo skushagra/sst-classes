@@ -9,12 +9,16 @@
 
 
 .AddCartBtn {
-    height: 70%;
-    width: 80%;
-    background-color: transparent;
-    border: 2px solid black;
+    height: 40%;
+    width: 60%;
+    background-color: rgb(124, 111, 247);
+    color: white;
+    border: none;
     border-radius: 5px;
-    color: black;
     outline: none;
     cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
 }

@@ -30,7 +30,7 @@ function ProductCard({product}) {
         } {product.rating.count} reviews</div> 
         <div className='productFrom'>from <span style={{fontWeight: 600}}>{product.brand} Store</span></div> 
         <div className='productCategory'>{product.category}</div> 
-        <div className='productPrice'> ₹ {product.price.value}</div>
+        <div className='productPrice'> {product.price.currency} {product.price.value}</div>
         </div>
         <div className="bottom">
           <AddToCart product={product} />
